@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>venkatasali GitHub Pages</title>
-  </head>
-  <body>
-    <h1>Welcome to venkatasali's GitHub Pages site!</h1>
-    <p>Your site is live at https://venkatasali.github.io/</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FastAPI WebSocket Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #messages { margin-top: 10px; padding: 10px; border: 1px solid #ccc; min-height: 100px; }
+    input, button { padding: 8px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>💬 FastAPI WebSocket Client</h1>
+  <p>Connecting to: <code id="ws-url"></code></p>
+
+  <input type="text" id="message" placeholder="Type a message" />
+  <button onclick="sendMessage()">Send</button>
+  <button onclick="connect()">Reconnect</button>
+
+  <div id="messages"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
