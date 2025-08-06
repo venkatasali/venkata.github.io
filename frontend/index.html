@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSocket Test</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    #messages { margin: 10px 0; padding: 10px; border: 1px solid #ccc; min-height: 100px; }
+    input, button { padding: 8px; }
+  </style>
+</head>
+<body>
+  <h1>💬 WebSocket Client</h1>
+  <p>Connecting to: <code id="url"></code></p>
+
+  <input type="text" id="inputMsg" placeholder="Type a message" />
+  <button onclick="send()">Send</button>
+
+  <div id="messages"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
